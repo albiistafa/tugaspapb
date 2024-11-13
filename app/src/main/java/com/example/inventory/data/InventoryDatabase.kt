@@ -24,6 +24,17 @@ import androidx.room.RoomDatabase
 /**
  * Database class with a singleton Instance object.
  */
+/**
+ * **InventoryDatabase** adalah kelas abstrak yang merepresentasikan database Room untuk aplikasi.
+ *
+ * - Annotation `@Database`: Menandai kelas ini sebagai database utama Room.
+ * - Kelas ini adalah subclass dari `RoomDatabase`, yang merupakan dasar untuk semua database Room.
+ *
+ * **Annotation Parameter:**
+ * - `entities = [Item::class]`: Menentukan daftar entitas (tabel) yang dikelola oleh database ini.
+ * - `version = 1`: Versi skema database. Ini digunakan oleh Room untuk melacak perubahan skema.
+ * - `exportSchema = false`: Menonaktifkan ekspor skema database untuk debugging atau analisis.
+ */
 @Database(entities = [Item::class], version = 1, exportSchema = false)
 abstract class InventoryDatabase : RoomDatabase() {
 

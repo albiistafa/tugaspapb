@@ -13,7 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+/**
+ * **AppContainer** adalah interface yang berfungsi sebagai abstraksi untuk Dependency Injection (DI).
+ *
+ * **Kegunaan:**
+ * - Menyediakan instansi dari `ItemsRepository` tanpa perlu membuatnya secara manual di berbagai tempat.
+ * - Meningkatkan modularitas dan testability aplikasi dengan memisahkan logika instansiasi dari penggunaan.
+ *
+ * @property itemsRepository: Deklarasi abstrak untuk repositori item. Implementasi aktual akan disediakan oleh kelas turunan.
+ */
 package com.example.inventory.data
 
 import android.content.Context

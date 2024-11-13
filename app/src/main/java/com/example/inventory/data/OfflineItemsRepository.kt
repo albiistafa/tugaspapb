@@ -17,7 +17,14 @@
 package com.example.inventory.data
 
 import kotlinx.coroutines.flow.Flow
-
+/**
+ * **OfflineItemsRepository** adalah implementasi dari interface `ItemsRepository`.
+ *
+ * Kelas ini berfungsi sebagai lapisan abstraksi untuk menghubungkan DAO (Data Access Object)
+ * dengan lapisan logika bisnis aplikasi. Implementasi ini menggunakan database lokal Room sebagai sumber data.
+ *
+ * @property itemDao: Objek `ItemDao` yang digunakan untuk mengakses tabel `items` dalam database.
+ */
 class OfflineItemsRepository(private val itemDao: ItemDao) : ItemsRepository {
     override fun getAllItemsStream(): Flow<List<Item>> = itemDao.getAllItems()
 

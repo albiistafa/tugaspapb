@@ -13,7 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+/**
+ * **AppViewModelProvider** adalah objek yang menyediakan `ViewModelFactory` untuk
+ * membuat instance ViewModel di seluruh aplikasi Inventory.
+ *
+ * **Kegunaan:**
+ * - Mengelola inisialisasi ViewModel di satu tempat.
+ * - Menghubungkan ViewModel dengan dependensi seperti repository melalui Dependency Injection.
+ */
 package com.example.inventory.ui
 
 import android.app.Application

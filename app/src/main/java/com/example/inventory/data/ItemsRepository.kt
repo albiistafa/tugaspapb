@@ -21,6 +21,13 @@ import kotlinx.coroutines.flow.Flow
 /**
  * Repository that provides insert, update, delete, and retrieve of [Item] from a given data source.
  */
+/**
+ * **ItemsRepository** adalah interface yang mendefinisikan abstraksi untuk operasi data pada entitas `Item`.
+ *
+ * Repository berfungsi sebagai perantara antara data source (seperti database Room) dan logika bisnis aplikasi.
+ * Dengan menggunakan Repository, aplikasi dapat memiliki lapisan abstraksi yang memisahkan logika akses data
+ * dari UI atau komponen lainnya.
+ */
 interface ItemsRepository {
     /**
      * Retrieve all the items from the the given data source.

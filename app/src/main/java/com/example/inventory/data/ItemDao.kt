@@ -27,6 +27,14 @@ import kotlinx.coroutines.flow.Flow
 /**
  * Database access object to access the Inventory database
  */
+/**
+ * **ItemDao** adalah interface yang berfungsi sebagai Data Access Object (DAO) untuk mengakses database Inventory.
+ *
+ * DAO menyediakan metode abstrak untuk berinteraksi dengan tabel `items` di database Room.
+ * Metode-metode ini digunakan untuk melakukan operasi CRUD (Create, Read, Update, Delete).
+ *
+ * Annotation `@Dao` menunjukkan bahwa interface ini adalah DAO untuk Room.
+ */
 @Dao
 interface ItemDao {
 
